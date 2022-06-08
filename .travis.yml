@@ -1,0 +1,14 @@
+# For needing docker
+sudo: required
+language: generic 
+services:
+  - docker
+
+before_install:
+  - docker build -t docker-dev -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true docker-dev npm run test
+
+
+
