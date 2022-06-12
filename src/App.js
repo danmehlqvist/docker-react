@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Counter from './Counter'
 import './App.css';
 
 function App() {
@@ -9,14 +10,8 @@ function App() {
         <p>
           This is a new deploy!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Counter />
           Learn React
-        </a>
       </header>
     </div>
   );
